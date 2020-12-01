@@ -1,0 +1,85 @@
+.container{
+    @include center-div;
+    max-width: 100vw;
+    @include md{
+        margin: 15vh auto 0 auto;
+        height: 70vh;
+        max-width: 75vw;
+        background-color: $grey;
+        box-shadow: $box-shadow;
+    }
+    @include xl{
+        margin: 13vh auto 0 auto;
+        height: 74vh;
+        max-width: 60vw;
+    }
+}
+#side-img{
+    @include background-img-cover-mobile;
+    @include md{
+        @include background-img-cover-desktop;
+    }
+}
+#side-img-ca-lg{
+    display: none;
+    @include md{
+        display: block;
+        @include background-img-cover-desktop;
+    }
+}
+#side-img-ca{
+    @include background-img-cover-mobile;
+    @include md{
+        display: none;
+    }
+}
+.form-field {
+    @include center-div;
+    width: 94%;
+    border: none;
+    border-radius: 5px;
+    padding: $default-padding-first;
+    @include md{
+        width: 70%;
+        padding: $default-padding-second;
+    }
+}
+.form-ca{
+    margin: 1rem auto;
+    @include md{
+        width: 80%;
+        padding: $default-padding-second;
+        margin: -0.5rem auto;
+    }
+}
+.box{
+    width: 94%;
+    margin: 0 auto;
+    font-size: $font-size-desktop;
+    color: $darkgrey;
+    padding-bottom: $default-padding-second;
+    @include md{
+        width: 80%;
+        padding-bottom: 0.2rem;
+    }
+    @include lg{
+        font-size: 0.7rem;
+    }
+}
+.btn-primary{
+    @include center-div;
+    font-size: $font-size-desktop;
+    padding: $default-padding-first;
+    width: 94%;
+    margin-bottom: 0.5rem;
+    @include md{
+        width: 70%;
+        padding: $default-padding-second;
+    }
+}
+#btn-ca{
+    margin-bottom: 0.5rem;
+    @include md{
+        width: 80%;
+    }
+}

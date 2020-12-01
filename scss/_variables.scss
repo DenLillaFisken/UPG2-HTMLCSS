@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+$font-family-first: 'Quicksand', sans-serif;
+
+$font-size-header: 1.5rem;
+$font-size-mobile: 1rem;
+$font-size-desktop: 0.9rem;
+
+$default-padding-first: 1rem;
+$default-padding-second: 0.5rem;
+
+$white: #ffffff;
+$grey: #E8E8E8;
+$darkgrey: #6c757d;
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+
+$background-img-1: url(../blueimg.jpg);
+
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1400px;
+@import "./breakpoints";

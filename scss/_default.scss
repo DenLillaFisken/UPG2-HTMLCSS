@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    @include default-font;
+    margin: 0;
+    padding: 0;
+    background-color: $grey;
+    @include md{
+        font-size: $font-size-desktop;
+        background-color: $white;
+    }
+    @include lg{
+        font-size: $font-size-desktop;
+    }
+}
+h1{
+    font-size: $font-size-header;
+    font-weight: 600;
+    text-align: center;
+    padding: $default-padding-first;
+}
+a{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    @include md{
+        font-size: $font-size-desktop;
+    }
+}
